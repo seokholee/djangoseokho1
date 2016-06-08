@@ -1,7 +1,9 @@
 <ul>
   {% for category in category_list %}
   <li>
+    <a href="{% url "blog:category_detail" category.pk %}">
       {{ category.title }}
+    </a>
   </li>
   {% endfor %}
 </ul>
